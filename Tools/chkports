@@ -1,0 +1,10 @@
+#!/bin/sh
+
+pkgdirs=$( pkg info -a -o | tr -s ' ' ' ' | cut -d ' ' -f 2 )
+
+for d in ${pkgdirs}
+do
+	if [ ! -d /usr/ports/${d} ]; then
+		echo $d
+	fi
+done

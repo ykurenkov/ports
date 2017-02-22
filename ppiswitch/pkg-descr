@@ -1,0 +1,5 @@
+The ppiswitch utility controls the operation of parallel port device
+ppi(4).  Electronic controller with 8 edentical channels, connected to
+parallel port can operate differend electrical devices (lamps, motors)
+and provide flexfible control for home and industry automation.
+

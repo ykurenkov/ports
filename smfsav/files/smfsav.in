@@ -1,0 +1,24 @@
+#!/bin/sh
+
+# PROVIDE: smfsav
+# REQUIRE: NETWORKING
+# BEFORE: sendmail
+
+# Written for FreeBSD.
+#
+# $FreeBSD: tags/RELEASE_10_0_0/mail/smfsav/files/smfsav.in 300896 2012-07-14 13:54:48Z beat $
+#
+# Copy this file into /usr/local/etc/rc.d as /usr/local/etc/rc.d/smfsav
+# Add this line to /etc/rc.conf:
+#
+# smfsav_enable="YES"
+
+. /etc/rc.subr
+
+name="smfsav"
+rcvar=smfsav_enable
+command="%%PREFIX%%/sbin/smfsav"
+
+load_rc_config ${name}
+run_rc_command "$1"
+

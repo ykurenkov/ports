@@ -1,0 +1,11 @@
+--- Makefile.orig	2011-06-22 17:10:48.000000000 +0400
++++ Makefile	2013-06-28 16:29:07.000000000 +0400
+@@ -15,7 +15,7 @@
+ CFLAGS += -Wall -Wshadow -Wp,-D_FORTIFY_SOURCE=2 -g
+ PREFIX ?= /usr/local
+ BINDIR ?= $(PREFIX)/bin
+-MANDIR ?= $(PREFIX)/share/man
++MANDIR ?= $(PREFIX)/man
+ 
+ INSTALL_PROGRAM ?= install
+ 
